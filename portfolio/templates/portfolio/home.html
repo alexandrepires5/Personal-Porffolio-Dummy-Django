@@ -1,5 +1,9 @@
-<h1>This is my home page</h1>
+<h1>Harold's Portfolio</h1>
 
+{% load static %}
+
+<a href="{% static 'portfolio/resume.pdf'%}">Resume</a>
+<img src="{% static 'portfolio/harold2.jpg' %}">
 {% for project in projects %}
 {{project.title}}
 <img src="{{project.image.url }}">
